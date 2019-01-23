@@ -1,6 +1,5 @@
 package com.izdebski.model;
 
-
 import javax.validation.constraints.*;
 
 public class User {
@@ -8,7 +7,7 @@ public class User {
     @NotEmpty(message="Name can't be empty")
     private String name;
 
-    @Min(value = 12,message="Age can't be lessthan 12")
+    @Min(value = 12,message="Age can't be less than 12")
     @Max(value = 120,message="Age can't be greater than 120")
     @NotNull(message="Age can't be null")
     private Integer age;
